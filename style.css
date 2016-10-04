@@ -1,0 +1,17 @@
+body{
+	font-family: arial, helvetica, sans-serif;
+	background: gray;
+	background: linear-gradient(to right,gray,white);
+}
+h2{
+
+}
+
+a{
+	text-decoration: none;
+	color: #14FAFA;
+}
+li{
+	list-style: none;
+	font-size: 20px;
+}
