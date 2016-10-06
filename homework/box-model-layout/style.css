@@ -1,0 +1,32 @@
+p{
+	background: red;
+	text-align: center;
+	margin: 
+
+}
+#nav{
+	background: black;
+	text-align: center;
+	padding: 10px;
+	margin-bottom: 30px;
+}
+#nav a{
+	color: white;
+	text-decoration: none;
+
+}
+#p1{
+	color: blue;
+}
+#p2{
+	color:green;
+}
+#p3{
+	color:yellow;
+}
+.container{
+	background: grey;
+	margin: 0 auto;
+	margin: 0 70px;
+	padding: 20px;
+}
