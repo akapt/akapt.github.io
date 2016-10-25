@@ -1,0 +1,13 @@
+if user input is < current temp
+	then
+		lower temp until current temp = user input
+^missread for heat only 
+
+
+if user input is > current temo
+	then 
+		raise temp until current temp = user input
+else
+	do nothing
+
+repeat to maintain
