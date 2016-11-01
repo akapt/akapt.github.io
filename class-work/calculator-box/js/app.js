@@ -28,7 +28,6 @@ $(document).ready(function(){
 	});
 	$('#a10').click(function(){
 		count += 10;
-		console.log(count);
 		update();
 	});
 	$('#a20').click(function(){
