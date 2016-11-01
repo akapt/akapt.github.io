@@ -13,3 +13,21 @@
 // 5. Use .innerHTML to change the text inside of #colorful-text to colorStr
 
 // 6. Use .style.background to change the background of #wrapper to colorStr
+var red = document.getElementById('red');
+var green = document.getElementById('green');
+var blue = document.getElementById('blue');
+var color-text = document.getElemtentById(color-text);
+document.getElementById(color-button).onclick function changeColor (){
+
+	var x = parseInt(red.value);
+	var y = parseInt(green.value);
+	var z = parseInt(blue.value);
+	var colorStr = 'rgb(' + x +','+ y +','+ z +')';
+	color-text.innerHTML = colorStr;
+	color-text.style.background = colorStr;
+
+
+
+
+
+}
