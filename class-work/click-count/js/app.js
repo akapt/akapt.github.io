@@ -9,22 +9,23 @@
 
 $(document).ready(function () {
 	var counter = 0;
-
 	$("#clickme").click(function(){
 		counter++;
 		console.log(counter);
+		var colorChange;
 		$("#click-num").text(counter);
 		if(counter === 5){
-			$("body").css("background-color", "red");
+			colorChange = "red";
 		}
 		else if(counter === 10){
-			$("body").css("background-color", "green");
-		}	
+			colorChange = "green";
+		}
 		else if(counter === 15){
-			$("body").css("background-color", "blue");
+			colorChange = "blue";
 		}	
 		else{
-			$("body").css("background-color", "black");
-		}	
+			colorChange = "black";
+		}
+		$("body").css("background-color", colorChange);
 	})
 })
