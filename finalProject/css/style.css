@@ -1,0 +1,51 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+header{
+	background: black;
+	overflow: auto;
+}
+h1{
+	color: white;
+	font-family: sans-serif;
+	font-size: 40px;
+	float: left;
+	margin-left: 20px
+}
+#largeNav{
+	float: right;
+	padding-top: 25px;
+}
+#largeNav a{
+	color: white;
+	font-family: sans-serif;
+	font-size: 40px;
+	text-decoration: none;
+	margin: 30px 20px 0 20px;
+}
+#largeNav a:hover{ 
+	color: yellow;
+}
+main{
+	height: 800px;
+	width: 100%;
+}
+#map{
+	height: 100%;
+	background: blue;
+}
+footer{
+	height: 60px;
+	width: 100%;
+	background: green;
+	text-align: center;
+	padding: 40px 0 10px 0;
+}
+footer a {
+	color: gray;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: 20px
+}
