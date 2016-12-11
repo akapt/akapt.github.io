@@ -1,7 +1,10 @@
+/*styles shared between pages*/
 html, body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
+	background: #96E0FD;
+	font-family: sans-serif;
 }
 header{
 	background: black;
@@ -9,7 +12,6 @@ header{
 }
 h1{
 	color: white;
-	font-family: sans-serif;
 	font-size: 40px;
 	float: left;
 	margin-left: 20px
@@ -19,33 +21,149 @@ h1{
 	padding-top: 25px;
 }
 #largeNav a{
-	color: white;
-	font-family: sans-serif;
-	font-size: 40px;
-	text-decoration: none;
 	margin: 30px 20px 0 20px;
 }
-#largeNav a:hover{ 
+#smallNav, #smallNav a{
+	padding: 0;
+	margin-top: 0;
+}
+#smallNav a{ 
+	height: 100%;
+	width: 100%;
+	display: none;
+	border: gray solid 3px;
+	text-align: center;
+	background: black;
+}
+#smallNav a:first-child{
+		border-bottom: 0;
+}
+#largeNav a, #smallNav a{
+	color: white;
+	font-size: 40px;
+	text-decoration: none;
+}
+#largeNav a:hover, #smallNav a:hover{ 
 	color: yellow;
 }
 main{
-	height: 800px;
-	width: 100%;
-}
-#map{
 	height: 100%;
-	background: blue;
+	width: 100%;
 }
 footer{
+	position: fixed;
+	bottom: 0;
 	height: 60px;
 	width: 100%;
-	background: green;
+	background: url('../img/gravel.png');
 	text-align: center;
 	padding: 40px 0 10px 0;
 }
 footer a {
-	color: gray;
+	color: black;
 	text-decoration: none;
 	font-family: sans-serif;
+	font-size: 20px;
+}
+
+/*index.html specific styles*/
+#fishTank{
+	height: 100%;
+	width: 100%;
+	
+}
+#seaweed{
+	position: fixed;
+	bottom: 50px;
+}
+#castle{
+	position: fixed;
+	bottom: 35px;
+	left: 600px;
+}
+#shell{
+	position: fixed;
+	bottom: 50px;
+	left: 200px;
+}
+#urchin{
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+}
+#goldFish1{
+	position: fixed;
+	top: 100px;
+	right: 20px;
+}
+#goldFish2{
+	position: fixed;
+	bottom: 150px;
+	right: 750px;
+}
+#goldFish3{
+	position: fixed;
+	top: 10px;
+	left: 200px;
+}
+/*find.html specific styles*/
+#map{
+	height: 100%;
+	background: blue;
+}
+#banner{
+	text-align: center;
 	font-size: 20px
+}
+
+/*media queries*/
+@media (max-width: 1580px),  (max-height: 720px){
+	#urchin {
+		display: none;
+	}
+}
+@media (max-width: 1150px) {
+	#goldFish2 {
+		right: 400px;
+	}
+	#goldFish3 {
+		top: 0;
+	}
+}
+@media (max-width: 1150px) {
+	#goldFish2 {
+		right: 400px;
+	}
+	#goldFish3 {
+		top: 0;
+	}
+}
+@media (max-width: 1000px) {
+	#goldFish2 {
+		right: 20px;
+	}
+	#goldFish3, #castle {
+		display: none;
+	}
+}
+@media (max-width: 720px) {
+	#goldFish1 {
+		top: 200px;
+		left: 10px;
+	}
+	#largeNav, #banner, #goldFish2{
+		display: none;
+	}
+	#smallNav a{
+		display: block;
+	}
+	h1{
+		margin: 5px;
+		font-weight: bold;
+	}
+}
+@media (max-height: 775px){
+	#seaweed, #goldFish3{
+		display: none;
+	}
 }
